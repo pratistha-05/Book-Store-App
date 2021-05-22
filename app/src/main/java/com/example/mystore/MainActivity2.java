@@ -18,42 +18,51 @@ import java.util.Map;
 
 public class MainActivity2 extends AppCompatActivity {
 
-
-    private static final String TAG ="hey" ;
+    FirebaseFirestore db = FirebaseFirestore.getInstance();
+    CollectionReference dbnew = db.collection("android");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
-        Toast.makeText(getApplicationContext(),"This is screen!",Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(), "This is screen!", Toast.LENGTH_SHORT).show();
 
-        FirebaseFirestore db = FirebaseFirestore.getInstance();
-        CollectionReference dbnew = db.collection("android");
 
-        Map<String, Object> user = new HashMap<>();
-        user.put("price", 2100);
-        user.put("Author", "Jerry Hamilton");
-        user.put("description", 1815);
+        Map<String, Object> book1 = new HashMap<>();
+        book1.put("price", 2100);
+        book1.put("Author", "Jerry Hamilton");
+        book1.put("USBN", 1836790391);
+        addData(book1);
 
-// Add a new document with a generated ID
-        //db.collection("android")
-                dbnew.add(user)
+
+        Map<String, Object> book2 = new HashMap<>();
+        book2.put("price", 2100);
+        book2.put("Author", "Jerry Hamilton");
+        book2.put("USBN", 1836790391);
+        addData(book2);
+
+
+}
+
+
+
+
+    private void addData(Map<String, Object> book)
+    {
+        dbnew.add(book)
                 .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
                     @Override
                     public void onSuccess(DocumentReference documentReference) {
-                        Toast.makeText(getApplicationContext(),"Added",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), "Added book1", Toast.LENGTH_SHORT).show();
                     }
                 })
                 .addOnFailureListener(new OnFailureListener() {
 
                     @Override
                     public void onFailure(@NonNull Exception e) {
-                        Toast.makeText(getApplicationContext(),"error!"+e,Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), "error!" + e, Toast.LENGTH_SHORT).show();
                     }
                 });
-
-
-
     }
 }
