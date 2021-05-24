@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    tools:context=".SignupActivity">
 
     <ImageView
 
@@ -25,64 +25,18 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintHeight_percent="0.76"
+        app:layout_constraintHeight_percent="0.8"
         android:background="@drawable/shape_login"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0">
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/emailInput"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="15dp"
-            android:layout_marginEnd="15dp"
-            android:hint="Email"
-            app:boxStrokeColor="#7C4DFF"
-            android:inputType="textEmailAddress"
-            android:textColorHighlight="#7C4DFF"
-            app:layout_constraintBottom_toTopOf="@+id/LoginButton"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/EmailLoginEditText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-               />
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/passwordInput"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="15dp"
-            android:layout_marginEnd="15dp"
-            android:hint="Password"
-            android:inputType="textPassword"
-            android:paddingTop="20dp"
-            android:textColorHighlight="#7C4DFF"
-            app:layout_constraintBottom_toTopOf="@+id/LoginGoogle"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:passwordToggleEnabled="true">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/PasswordLoginEditText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="textPassword"
-                 />
-        </com.google.android.material.textfield.TextInputLayout>
 
 
         <Button
@@ -124,7 +78,7 @@
             android:layout_marginEnd="20dp"
             android:fontFamily="@font/bangers"
             android:gravity="center"
-            android:text="Login To Your Account"
+            android:text="Register your account"
             android:textColor="#7C4DFF"
             android:textSize="30sp"
             app:layout_constraintBottom_toTopOf="@+id/emailInput"
