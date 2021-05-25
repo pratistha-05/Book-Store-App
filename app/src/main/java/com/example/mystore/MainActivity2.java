@@ -36,11 +36,6 @@ public class MainActivity2 extends AppCompatActivity {
         addData(book1);
 
 
-        Map<String, Object> book2 = new HashMap<>();
-        book2.put("price", 2100);
-        book2.put("Author", "Jerry Hamilton");
-        book2.put("USBN", 1836790391);
-        addData(book2);
 
 
 }
