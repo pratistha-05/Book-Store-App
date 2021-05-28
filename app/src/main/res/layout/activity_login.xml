@@ -25,13 +25,13 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintHeight_percent="0.76"
         android:background="@drawable/shape_login"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         android:paddingStart="15dp"
         android:paddingEnd="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.76"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0">
@@ -43,9 +43,9 @@
             android:layout_height="wrap_content"
 
             android:hint="Email"
-            app:boxStrokeColor="#7C4DFF"
             android:inputType="textEmailAddress"
             android:textColorHighlight="#7C4DFF"
+            app:boxStrokeColor="#7C4DFF"
             app:layout_constraintBottom_toTopOf="@+id/LoginButton"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -54,8 +54,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/EmailLoginEditText"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-               />
+                android:layout_height="wrap_content" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -80,8 +79,7 @@
                 android:id="@+id/PasswordLoginEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPassword"
-                 />
+                android:inputType="textPassword" />
         </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -91,8 +89,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
 
-            android:text="LOGIN "
             android:background="@drawable/button_rounded"
+            android:text="LOGIN "
             android:textColor="#ffffff"
             android:textSize="20sp"
             app:layout_constraintBottom_toTopOf="@+id/LoginGoogle"
@@ -130,6 +128,38 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="New User? "
+            android:textColor="#7C4DFF"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/LoginGoogle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.389"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/LoginButton"
+            app:layout_constraintVertical_bias="0.265" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="64dp"
+            android:background="@android:color/transparent"
+            android:text="SignUp Here"
+            android:textAllCaps="false"
+            android:textColor="#7C4DFF"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/LoginGoogle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.087"
+            app:layout_constraintStart_toStartOf="@+id/textView6"
+            app:layout_constraintTop_toBottomOf="@+id/LoginButton"
+            app:layout_constraintVertical_bias="0.0" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

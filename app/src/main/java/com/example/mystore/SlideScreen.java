@@ -8,7 +8,6 @@ import androidx.fragment.app.FragmentStatePagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
-import android.view.View;
 
 public class SlideScreen extends AppCompatActivity {
 
@@ -55,5 +54,6 @@ public class SlideScreen extends AppCompatActivity {
             return 3;
         }
     }
+
 
 }

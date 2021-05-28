@@ -139,7 +139,7 @@
             android:background="@drawable/button_rounded"
             android:elevation="10dp"
 
-            android:text="LOGIN "
+            android:text="SIGN IN"
             android:textColor="#ffffff"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
