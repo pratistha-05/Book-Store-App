@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#EAE2FF"
+
     tools:context=".UserChoice">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -51,11 +52,11 @@
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
-        android:layout_marginEnd="15dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
         android:layout_marginBottom="30dp"
         android:gravity="center"
-        android:text="More Than 100 Novels,fictions and knowledge books are available for you.So lets get started!"
+        android:text="More than 100 Novels,fictions and knowledge books are available for you.So lets get started!"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -69,6 +70,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-condensed-medium"
         android:text="Categories"
+
         android:textColor="@color/black"
         android:textSize="26sp"
 
@@ -96,10 +98,10 @@
             android:id="@+id/cardview1"
             android:layout_width="175dp"
             android:layout_height="200dp"
-            android:elevation="10dp"
             app:cardBackgroundColor="#8357FB"
             app:cardCornerRadius="10dp"
-            app:cardElevation="1dp"
+            android:elevation="10dp"
+            android:layout_margin="4dp"
             app:layout_constraintBottom_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -117,7 +119,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:elevation="10dp"
-                    app:cardCornerRadius="10dp"
+                    app:cardCornerRadius="50dp"
                     app:cardElevation="1dp">
 
                     <ImageView
@@ -146,10 +148,11 @@
             android:id="@+id/cardview2"
             android:layout_width="175dp"
             android:layout_height="200dp"
-            android:layout_marginLeft="20dp"
+            android:layout_marginStart="30dp"
             app:cardBackgroundColor="#8357FB"
             app:cardCornerRadius="10dp"
-            app:cardElevation="1dp"
+            android:elevation="10dp"
+            android:layout_margin="4dp"
             app:layout_constraintBottom_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -166,7 +169,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:elevation="10dp"
-                    app:cardCornerRadius="10dp"
+                    app:cardCornerRadius="50dp"
                     app:cardElevation="1dp">
 
                     <ImageView
@@ -189,6 +192,7 @@
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
+
     </LinearLayout>
 
     <androidx.cardview.widget.CardView
@@ -198,10 +202,11 @@
         android:layout_marginStart="25dp"
         android:layout_marginEnd="25dp"
         android:elevation="10dp"
+        android:layout_margin="4dp"
         android:foregroundGravity="center"
         app:cardBackgroundColor="@color/white"
         app:cardCornerRadius="10dp"
-        app:cardElevation="1dp"
+        app:cardElevation="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.444"

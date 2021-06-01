@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     private ViewPager viewPager;
     //private ScreenSlideAdapter pagerAdapter;
 
-    ImageView background;
+
     LottieAnimationView animation;
     TextView appName;
 
@@ -37,6 +37,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
+        appName=findViewById(R.id.text);
+        animation=findViewById(R.id.animationView);
+
+        appName.animate().translationY(-1600).setDuration(1000).setStartDelay(2000);
+        animation.animate().translationY(2000).setDuration(1000).setStartDelay(2000);
+
 
         new Handler().postDelayed(new Runnable() {
             @Override
@@ -45,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent mainIntent = new Intent(MainActivity.this, SlideScreen.class);
                 startActivity(mainIntent);
             }
-        }, 3000);
+        }, 3500);
 
 
     }
